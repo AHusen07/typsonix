@@ -1,0 +1,163 @@
+body {background-color: rgb(100, 150, 240);}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'navbar'
+    'intro'
+    'header'
+    'content'
+    'footer'
+    ;
+}
+.navbar {
+    grid-area: navbar;
+    background-color: white;
+    width: 100%;
+    border-radius: 25px;
+    height: 75px;
+}
+
+ul {
+    list-style-type: none;
+    overflow: auto;
+}
+
+li a {
+    float: right;
+}
+
+li a {
+    display: block;
+    font-family: 'Arial';
+    color: cornflowerblue;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px 50px 25px 50px;
+}
+
+li a:hover {
+    color: rgb(100, 100, 100);
+}
+
+#logo {
+    position: absolute;
+    left: 25px;
+}
+
+#judul {
+    color: rgb(0, 70, 200);
+    font-family:cursive;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 10px;
+}
+
+
+.intro {
+    grid-area: intro;
+
+}
+
+p {
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+}
+.header {
+    grid-area: header;
+    border-radius: 5px 50px 50px 50px;
+    background-color: rgb(0, 70, 200);
+    height: 150px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+
+.content {
+    grid-area: content;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Arial';
+    padding: 25px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 16px;
+    font-family:'Lucida Sans';
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    color: white;
+    font-family: cursive;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    height: 450px;
+}
+
+.column :hover {
+    background-color: rgb(150, 150, 150);
+}
+
+.row {
+    margin: 1px;
+}
+
+.card {
+    width: 90%;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.5);
+    align-items: center;
+    align-content: center;
+    border-color: blue;
+}
+
+.container {
+    padding: 25px 0px 15px 0px;
+}
+
+#customtable {
+    float: center;
+    font-family: 'Trebuchet MS';
+    border-collapse: collapse;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#customtable td, #customtable th {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+}
+
+#customtable tr:nth-child(even){background-color: #fffedcba;}
+#customtable tr:hover {background-color: rgb(150, 150, 150);}
+
+#customtable th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: blue;
+    text-align: center;
+    padding: 10px 15px 10px 100px;
+    color: white;
+}
